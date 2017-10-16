@@ -32,7 +32,6 @@ import com.amap.api.trace.LBSTraceClient;
 import com.amap.api.trace.TraceListener;
 import com.amap.api.trace.TraceLocation;
 import com.amap.api.trace.TraceOverlay;
-import com.baidu.mapapi.SDKInitializer;
 
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;

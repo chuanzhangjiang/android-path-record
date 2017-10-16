@@ -1,10 +1,8 @@
 package amap.com.baidu;
 
 import android.app.Application;
-import android.content.Context;
 import android.widget.Toast;
 
-import com.baidu.mapapi.SDKInitializer;
 import com.baidu.trace.LBSTraceClient;
 import com.baidu.trace.Trace;
 import com.baidu.trace.api.entity.LocRequest;
@@ -15,7 +13,6 @@ import com.baidu.trace.model.CoordType;
 import com.baidu.trace.model.OnTraceListener;
 import com.baidu.trace.model.ProcessOption;
 import com.baidu.trace.model.PushMessage;
-import com.baidu.trace.model.SortType;
 import com.baidu.trace.model.TransportMode;
 
 import amap.com.MyApplication;
@@ -57,8 +54,8 @@ public class TraceHelper {
 
     public TraceHelper init(Application context) {
         mContext = context;
-        SDKInitializer.initialize(context);
-        SDKInitializer.setCoordType(com.baidu.mapapi.CoordType.GCJ02);
+//        SDKInitializer.initialize(context);
+//        SDKInitializer.setCoordType(com.baidu.mapapi.CoordType.GCJ02);
         mClient = new LBSTraceClient(context);
         mClient.setInterval(2, 10);//设置定位周期和打包周期
         entityName = MyApplication.getInstance().getImei();
